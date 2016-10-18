@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CRUD APP</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <h1>Simple CRUD app</h1>
@@ -20,5 +21,23 @@
         </p>
         <button type="submit">Submit</button>
     </form>
+    <div>
+        <p><%= data.name %></p>
+        <ul>
+            <% for(var i = 0; i <data.length; i++) {%>
+                <li><%= data.name [i] %></li>
+            <% } %>
+        </ul>
+    </div>
+    <div>
+        <h3>Replace last quote</h3>
+        <button id="update">update field name with 'Craig Rufener'</button>
+    </div>
+    <div>
+        <h3>Delete a quote</h3>
+        <button id="delete">delete field name with 'Craig Rufener'</button>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/assets/scripts/script.js"></script>
 </body>
 </html>
